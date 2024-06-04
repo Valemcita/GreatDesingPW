@@ -150,10 +150,13 @@ section{
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
+    flex-wrap: wrap;
 
 }
 .card{
     background-color: dimgray; 
+    min-width: 30%;
+    margin-bottom: 5%;
 }
 .btn{
     background-color: blueviolet;
@@ -162,7 +165,6 @@ section{
 .btn:hover{
     background-color: rgb(106, 85, 126);
 }
-
 @media (max-width: 1535px){
     header{
         padding: 15px 3%;
@@ -242,6 +244,9 @@ section{
     }
 }
 @media (max-width: 680px){
+    .ejemplo{
+        flex-direction: column;
+    }
     .logo-img img{
         width: 100%;
         height: auto;
